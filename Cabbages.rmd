@@ -76,3 +76,10 @@ This final test is more than sufficient evidence to conclude that these two meth
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+By asking ChatGPT we were able to get a string of R code that printed out a notched box plot showing the relationship of the two cultivation methods in comparison to their vitamin C yields. 
+
+We then ran a favstats numerical comparison and a t-test that confirmed these results in a different layout and now we can be sure that this particular change in cultivation from c39 to c52 allows for more Vitamin C to be grown in the crops. 
+
+These changes are directly related to one another and a level of Vitamin C typically suggests a certain cultivation method, still accounting for outliers, and a particular cultivation method can predict a higher/lower yield of Vitamin C.
+
