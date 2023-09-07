@@ -35,9 +35,29 @@ veggy <- cabbages
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+ttest_result <- t.test(VitC ~ Cult, data = veggy)
+
+ggplot(veggy, aes(x = Cult, y = VitC)) +
+  geom_boxplot(fill = "skyblue", color = "black", notch = TRUE, outlier.colour = "red") +
+  labs(
+    title = "Notched Box Plot of VitC by Cult",
+    x = "Cultivation (Cult)",  # Updated x-axis label
+    y = "Vitamin C (VitC)"     # Y-axis label
+  ) +
+  theme(plot.title = element_text(hjust = 0.5))  # Centered title
+
+```
+As shown in the box plot comparing levels of Vitamin C to two methods of Cultivation,c52 yields a higher result of Vitamin C. 
+
+The appearance of the two boxes with one marginally higher than the other suggests a significance in the data that they are disjoint.   
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+
+
 
 ## Inferential Results
 
