@@ -48,6 +48,7 @@ ggplot(veggy, aes(x = Cult, y = VitC)) +
   theme(plot.title = element_text(hjust = 0.5))  # Centered title
 
 ```
+
 As shown in the box plot comparing levels of Vitamin C to two methods of Cultivation,c52 yields a higher result of Vitamin C. 
 
 The appearance of the two boxes with one marginally higher than the other suggests a significance in the data that they are disjoint.   
@@ -55,9 +56,11 @@ The appearance of the two boxes with one marginally higher than the other sugges
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+```{r}
+favstats(VitC~Cult,data=veggy)
+```
 
-
-
+Again the difference of c39's 3rd Quartile results being smaller than c52's 1st Quartile suggests that the two methods are disjoint. 
 
 ## Inferential Results
 
